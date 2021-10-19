@@ -1,0 +1,188 @@
+@import url("http://fonts.cdnfonts.com/css/valorant");
+@import url(//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+:root {
+  --valorant-font: "VALORANT", sans-serif;
+  --tungsten-font: "Tungsten Bold";
+  --valorant-code-font: "Nanum Gothic Coding", monospace;
+}
+
+section {
+  margin-bottom: 15rem;
+}
+.video_section {
+  background-color: aqua;
+  padding: 0 !important;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 5% 100%, 0 90%);
+  height: 40rem;
+  position: relative;
+}
+.video_section .video_text {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+}
+.video_section .sub--title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.video_section .title {
+  font-size: 8rem;
+  font-family: var(--valorant-font);
+}
+
+.video_section .play-btn .btn {
+  background-color: red;
+  color: #fff;
+  width: 15rem;
+  height: 3.5rem;
+  position: relative;
+  outline: 2px solid rgba(255, 255, 255, 0.397);
+  outline-offset: 10px;
+  border-radius: 0;
+  transition: 0.3s ease-out;
+  background: linear-gradient(to left, red 50%, black 40%) right;
+  background-size: 200%;
+}
+.video_section .play-btn .btn:hover {
+  outline-offset: 2px;
+  background-position: left;
+}
+
+.video_section .play-btn .btn span {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.video_section video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: -10rem;
+  min-width: 100%;
+  min-height: 100%;
+}
+.latest_news_section .card {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.image-hover {
+  background-color: rgb(121, 3, 3);
+  transition: 0.3s ease-out;
+  background: linear-gradient(
+      -45deg,
+      rgb(0, 0, 0) 50%,
+      rgba(170, 0, 0, 0.698) 40%
+    )
+    right;
+  background-size: 300%;
+}
+.latest_news_section .card:hover .card-img-top {
+  opacity: 10%;
+}
+.latest_news_section .card:hover .image-hover {
+  background-position: left;
+}
+.latest_news_section .card .card-date {
+  font-size: 0.9rem;
+}
+.latest_news_section .card .card-type {
+  font-size: 0.9rem;
+  color: #fe505d;
+}
+.latest_news_section .card .card-sup-text {
+  font-size: 1.19rem;
+  font-weight: 700;
+}
+.latest_news_section .latest-news-title {
+  color: #ff4655;
+  font-weight: 800;
+  font-size: 7rem;
+  letter-spacing: 0px;
+  transform: scaleY(1.2);
+  font-family: var(--tungsten-font);
+}
+.latest_news_section .latest-news-title-row {
+  position: relative;
+}
+.latest_news_section .latest-news-title-row .col {
+  margin-bottom: -0rem;
+  z-index: 1;
+  position: absolute;
+  top: -6.5rem;
+}
+
+.we-are-valorant-section .container {
+  max-width: 100% !important;
+}
+.we-are-valorant-section .we-are-valorant-title {
+  font-family: var(--tungsten-font);
+  font-size: 8rem;
+}
+.we-are-valorant-section .valorant-code {
+  position: relative;
+  transform: rotate(180deg);
+  height: 100%;
+}
+.we-are-valorant-section .valorant-code small {
+  color: red;
+  position: absolute;
+  left: 0;
+  font-family: var(--valorant-code-font);
+  font-size: 0.7rem;
+  font-weight: 800;
+  border-top: 4px solid red;
+}
+.we-are-valorant-section .video-container {
+  width: 100%;
+  position: relative;
+  height: 25rem;
+  background-image: url("/src/assets/images/videoBackground.jpg");
+}
+.we-are-valorant-section .video-container::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  background-color: red;
+}
+.we-are-valorant-section .video-container::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  width: 5rem;
+  height: 0.4rem;
+  background-color: red;
+}
+.we-are-valorant-section .left-side {
+  padding: 0 5rem;
+}
+.we-are-valorant-section .left-side h6 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.we-are-valorant-section .left-side p {
+  color: #808982;
+  font-family: serif;
+  text-align: justify;
+  margin-bottom: 2.4rem;
+}
+.we-are-valorant-section .left-side a {
+  text-decoration: none;
+  color: #ff4655;
+  transition: 0.3s;
+}
+.we-are-valorant-section .left-side a:hover {
+  color: #000;
+}
