@@ -1,9 +1,12 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "../../assets/style/main.css";
+import { IoPlayOutline } from "react-icons/io5";
+import { Parallax } from "react-scroll-parallax";
 function Main() {
   return (
     <>
+    <div  className="line"></div>
       <section className="video_section">
         <div className="video_text">
           <small className="sub--title">
@@ -25,6 +28,12 @@ function Main() {
           src={require("../../assets/videos/valorant.mp4").default}
         ></video>
       </section>
+      <Parallax className="back-text-con" y={[-10, 50]}>
+        <h2 className="back-text">
+          <span>WE ARE </span>
+          <span>VALORANT</span>
+        </h2>
+      </Parallax>
       <section className="latest_news_section">
         <Container>
           <Row className="latest-news-title-row">
@@ -141,16 +150,90 @@ function Main() {
                   Unranked modes as well as Deathmatch and Spike Rush.
                 </p>
                 <p>
-                  <a href="#">Watch the gameplay trailer here</a>
+                  <a href="/">Watch the gameplay trailer here</a>
                 </p>
                 <hr />
               </div>
             </Col>
             <Col xs={6}>
               <div className="video-container">
-                <div className="paly-icon"></div>
+                <div className="paly-icon">
+                  <IoPlayOutline />
+                </div>
               </div>
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="agents_section-0"></section>
+      <section className="agents_section">
+        <Container className="con">
+          <Row>
+            <Col xs={8}>
+              <Parallax y={[-25, 10]} x={[-10, 10]}>
+                <img
+                  src={require("../../assets/images/maxresdefault.png").default}
+                  alt=""
+                />
+              </Parallax>
+            </Col>
+            <Col xs={4} className="right-side">
+              <Row>
+                <hr />
+              </Row>
+              <Row>
+                <h2>YOUR AGENTS</h2>
+              </Row>
+              <Row>
+                <h5>CREATIVITY IS YOUR GREATEST WEAPON.</h5>
+              </Row>
+              <Row>
+                <p>
+                  More than guns and bullets, you’ll choose an Agent armed with
+                  adaptive, swift, and lethal abilities that create
+                  opportunities to let your gunplay shine. No two Agents play
+                  alike, just as no two highlight reels will look the same.
+                </p>
+              </Row>
+              <Row>
+                <div className="btn">
+                  <span>VIEW ALL AGENTS</span>
+                </div>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="map-section">
+        <Container>
+          <Row className="first-row"></Row>
+          <Row className="right-side">
+            <Col>
+              <Row>
+                <hr />
+              </Row>
+              <Row>
+                <h2>YOUR MAPS</h2>
+              </Row>
+              <Row>
+                <h5>FIGHT AROUND THE WORLD</h5>
+              </Row>
+              <Row>
+                <p>
+                  Each map is a playground to showcase your creative thinking.
+                  Purpose-built for team strategies, spectacular plays, and
+                  clutch moments. Make the play others will imitate for years to
+                  come.
+                </p>
+              </Row>
+              <Row>
+                <div className="btn">
+                  <span>VIEW ALL MAPS</span>
+                </div>
+              </Row>
+            </Col>
+            <Col></Col>
           </Row>
         </Container>
       </section>
