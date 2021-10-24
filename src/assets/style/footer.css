@@ -82,3 +82,21 @@
 .footer .row:nth-child(6) ul li {
   color: #fff;
 }
+
+
+@media (max-width: 768px) {
+  .back-text-con{
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  html,
+  body {
+    width: 100%;
+    position: relative;
+  }
+  .footer {
+    height: 60rem;
+  }
+
+}
