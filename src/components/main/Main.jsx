@@ -6,10 +6,10 @@ import { Parallax } from "react-scroll-parallax";
 function Main() {
   return (
     <>
-    <div  className="line"></div>
-      <section className="video_section">
+    <div  className="line" ></div>
+      <section className="video_section " >
         <div className="video_text">
-          <small className="sub--title">
+          <small className="sub--title" >
             A 5v5 character-based tactical shooter
           </small>
           <h1 className="title">VALORANT</h1>

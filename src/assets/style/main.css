@@ -281,7 +281,6 @@ section {
   outline: 1px solid #fff;
   outline-offset: 10px;
   border-radius: 0;
-
 }
 
 .agents_section .right-side .btn:hover {
@@ -301,8 +300,8 @@ section {
   z-index: -1;
   margin-bottom: 0;
 }
-.map-section .container .first-row{
-  margin-bottom:20rem;
+.map-section .container .first-row {
+  margin-bottom: 20rem;
 }
 
 .map-section .right-side .row {
@@ -319,7 +318,7 @@ section {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.map-section  .right-side p {
+.map-section .right-side p {
   font-family: sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -327,11 +326,7 @@ section {
 }
 .map-section .right-side .btn {
   transition: 0.3s ease-out;
-  background: linear-gradient(
-      -45deg,
-      #ff4655 50%,
-      rgba(0, 0, 0, 0.698) 50%
-    )
+  background: linear-gradient(-45deg, #ff4655 50%, rgba(0, 0, 0, 0.698) 50%)
     right;
   background-size: 300%;
   width: 15rem;
@@ -342,42 +337,122 @@ section {
   outline-offset: 10px;
   border-radius: 0;
   color: #fff;
-
 }
 
-.map-section  .right-side .btn:hover {
+.map-section .right-side .btn:hover {
   background-position: left;
-  
 }
-.back-text-con{
-position: absolute;
-z-index: -13;
-opacity: 50%;
+.back-text-con {
+  position: absolute;
+  z-index: -13;
+  opacity: 50%;
 }
-.back-text{
+.back-text {
   transform: translateY(-66.7799px);
   left: 0;
   font-family: var(--tungsten-font);
   top: 40rem;
   z-index: -13;
-  line-height: .82;
+  line-height: 0.82;
   white-space: nowrap;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.356);
 }
-.back-text span{
+.back-text span {
   font-size: 30rem;
   display: block;
   color: #ece8e1;
 }
-.line{
+.line {
   width: 4.2rem;
   height: 250rem;
   /* background-color: red; */
   transform: rotate(0deg);
   position: absolute;
   left: 0px;
-  border-right:1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
   z-index: -15;
   background-image: url("/src/assets/images/backgroundSprite.png");
   background-repeat: space;
+}
+
+@media (max-width: 1024px) {
+  .back-text-con{
+    display: none;
+  }
+  .video_section .title{
+    font-size: 5rem;
+  }
+  .agents_section img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+}
+@media (max-width: 768px) {
+  .back-text-con{
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  html,
+  body {
+    width: 100%;
+    position: relative;
+  }
+
+  .video_section {
+    width: 100%;
+  }
+  .video_section .video_text {
+    width: 100%;
+    /* background-color: #ece8e1; */
+    margin-left: -6.5rem;
+  }
+  .video_section .title {
+    font-size: 4rem;
+  }
+
+  .latest_news_section .latest-news-title {
+    font-size: 4rem;
+  }
+  .we-are-valorant-section .we-are-valorant-title {
+    font-size: 3rem;
+  }
+  .we-are-valorant-section div,
+  .agents_section div,
+  .map-section div {
+    display: block !important;
+    width: 100%;
+  }
+  .con {
+    position: relative !important;
+  }
+  .agents_section img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .agents_section .right-side h2 {
+    font-size: 2.6rem;
+  }
+
+  .map-section div{
+    text-align: center;
+  }
+  .map-section .right-side .row {
+    justify-content: center;
+    align-items: center;
+  }
+  .map-section .right-side h2 {
+    font-size: 4.6rem;
+    margin-top: 4rem;
+  }
+  .map-section .right-side .btn{
+    margin-left: 4.5rem;
+  }
+  .map-section{
+    background-position: bottom;
+  }
+  .back-text-con{
+    display: none;
+  }
 }
